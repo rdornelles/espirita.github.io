@@ -1,16 +1,16 @@
 /************** GLOBAL **************/
 body {
-    background: #FAFAFA;
-    color: #333333;
+    background: #F2E0D0;
+    color: #401A39;
     margin: 0;
 }
 
 a:hover{
-    opacity: 0.30;
+    color: rgb(166, 60, 36, 0.3);
 }
 
 a {
-    color: black;
+    color: rgb(166, 60, 36);
     text-decoration: none;
 }
 
@@ -23,46 +23,53 @@ nav {
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
+    background-color: #D9BBA9;
+    border-bottom: solid #8C4535;
 }
 
 nav h1 {
     position: absolute;
     font-family: "Sansita Swashed";
     text-transform: capitalize;
-    font-size: 3vmax;
+    font-size: 32px;
     padding: 10px;
+}
+
+/************** CORPO **************/
+
+main {
+    margin-top: 3vmax;
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 12vmax;
 }
 
 main p {
     text-align: justify;
-    margin: 0 auto;
     font-size: 3vmax;
-    width: 80vw;
+}
+
+main ul li {
+    font-size: 2vmax;
 }
 
 
 /************** RODAPÉ **************/
-footer span {
-    width: 40vw;
-    padding: 10px;
-    text-align: justify;
+footer h2 div {
     display: inline-block;
 }
 
-footer span:nth-child(3n)  {
-    text-align: center;
-}
-
 footer h2 {
+    margin: 0;
     padding: 16px;
-    background-color: #cccccc;
+    font-size: 2vmax;
+    background-color: #D9BBA9;
+    border-top: solid #8C4535;
 }
 
 footer {
-    display: block;
+    width: 100vw;
+    position: fixed;   
     text-align: center;
-}
-
-@media only screen and (max-width: 780px) {
-    footer span {width: 80vw;}
+    bottom: 0;
 }
